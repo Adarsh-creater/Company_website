@@ -1,0 +1,270 @@
+.internships {
+    /*width: 90%;*/
+    margin: 0 auto;
+    max-width: 1261px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.intro-text {
+    text-align: center;
+    margin: 63px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /*padding-bottom: 25px;*/
+    justify-content: space-between;
+    /*border-bottom: 2px solid gray;*/
+    /*background: #0066cc;*/
+}
+
+.intro-text h1 {
+    font-size: 1.8em;
+    /*color: white;*/
+    max-width: 60%;
+    text-align: left;
+    
+}
+
+.intro-text .highlight {
+    color: #0066cc;
+}
+
+.intro-text p {
+    color: #666;
+    padding-top: 15px;
+    font-size: 1.15em;
+    max-width: 340px;
+    /*margin: 0 auto;*/
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.job-listing {
+    background-color: white;
+    border-radius: 150px;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.job-details {
+    /*max-width: 100%;*/
+    padding: 75px 25px;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-details h2 {
+    font-size: 1.5em;
+    margin: 23px 0;
+    color: #333;
+}
+
+.job-details p {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #666;
+    max-width: 45%;
+    
+}
+
+.badge {
+    background-color: #0066cc;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 1em;
+    max-width: 10%;
+}
+
+.location {
+    font-size: 1em;
+    color: #666;
+    margin-left: 10px;
+}
+
+/* Button Styles */
+.apply-btn {
+    background-color: transparent;
+    color: #0066cc;
+    border: 2px solid #0066cc;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: #0066cc;
+    color: white;
+}
+.job-role h1{
+    font-size: 2em;
+    margin-top: 85px;
+
+}
+.job-role p{
+    font-size: 1.15em;
+    color: #666;
+    margin: 45px 0;
+}
+.card-box{
+    display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    position: relative;
+    position: relative;
+    width: 313px;
+    height: 248px;
+    transition: 0.3s ease;
+    background-color: #fff;
+    padding: 46px 33px;
+    margin: 20px;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.card .image {
+    padding: 12px;
+    border-radius: 40px;
+    background: #72727214;
+}
+
+.top-right,
+.bottom-left {
+    position: absolute;
+    width: 120px;
+    /* filter: grayscale(10);   */
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    left: 0;
+    bottom: 0;
+}
+
+.card h2 {
+    margin: 8px 0;
+}
+
+.card p {
+    text-align: center;
+    margin: 5px 0;
+    padding: 0px 25px;
+    padding-bottom: 12px;
+    font-size: 1em;
+    color: #666;
+}
+
+.card a {
+    visibility: hidden;
+    text-decoration: none;
+    font-size: 18px;
+    /* font-weight: bold; */
+    color: #005eff;
+    padding: 8px 0;
+    /* border-radius: 20px; */
+    /* background: white; */
+
+}
+
+.card:hover h2 {
+    color: #fff;
+    z-index: 5;
+    /* backdrop-filter: blur(50px); */
+}
+
+.card:hover p {
+    color: #fff;
+    z-index: 5;
+    /* backdrop-filter: blur(50px); */
+}
+
+.card:hover .image {
+    background: #fff;
+    z-index: 5;
+    /* backdrop-filter: blur(50px); */
+}
+.card:hover a{
+    visibility: visible;
+    color: white;
+    z-index: 5;
+    /* backdrop-filter: blur(50px); */
+}
+
+.card::before,
+.card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg,
+            #005eff,
+            rgb(128, 0, 255));
+    transition: 0.5s ease;
+    z-index: 3;
+}
+
+.card::before {
+    clip-path: circle(30% at 0 0)
+}
+
+.card::after {
+    clip-path: circle(30% at 100% 100%)
+}
+
+.card:hover::before {
+    clip-path: circle(100% at 0 0);
+}
+
+.card:hover::after {
+    clip-path: circle(100% at 100% 100%);
+}
+/* Responsive Styles */
+@media screen and (max-width: 900px){
+  .job-details p {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+    .job-listing {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-details {
+     
+        margin-bottom: 15px;
+    }
+
+    .apply-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

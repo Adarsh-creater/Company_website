@@ -1,0 +1,22 @@
+
+/* main{
+    height: 100vh;
+    width: 100%;
+} */
+.slide-container{
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+.slide-container .slides{
+    /* height: calc(100% - 40px); */
+    width: 100%;
+    position: relative;
+}
+.slide-container .slides img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+

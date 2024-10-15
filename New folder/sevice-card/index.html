@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cccccc;
+    min-height: 100vh;
+}
+.service-section{
+    font-family: "Poppins", sans-serif;
+    width: 1257px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.service-section .service-box{
+    position: relative;
+    height: 350px;
+    background: rgb(255, 255, 255);
+    width: 365px;
+    margin: 30px 0;
+
+}
+
+.service-section .service-box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0055ff;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    ;
+}
+
+.service-section .service-box:hover .imgBx{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top:calc(50% - 75px) ;
+    transition: 0.5s ease-in-out;
+    background: #333;
+}
+
+.service-section .service-box .imgBx::before{
+    content: attr(data-text);
+    position: absolute;
+    right: 13px;
+    top: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: 6em;
+    color: rgba(255, 255, 255, 0.2);
+font-weight: 700;
+}
+
+.service-section .service-box .imgBx img{
+    filter: brightness(0) invert(1);
+    /* max-width: 100px; */
+    transition: 0.5s ease-in-out;
+    
+}
+/* .service-section .service-box:hover .imgBx img{
+    
+    max-width: 75px;
+} */
+
+.service-section .service-box .content{
+    position: absolute;
+    right: 0;
+    /* width: calc(100%-75px); */
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.service-section .service-box .content h1{
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+.service-section .service-box .content p{
+    padding: 0 55px;
+}
+.service-section .service-box .content a{
+    display: inline-block;
+    margin-top: 40px;
+    padding: 5px 10px;
+    background:  #0055ff;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .service-section{
+        width: 100%;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: space-around;
+    }
+    .service-box{
+        width: 400px;
+    }
+}
+@media (max-width: 768px){
+
+    .service-section .service-box {
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+    .service-section .service-box .imgBx{
+        position: relative;
+        padding: 50px 0;
+    }
+    .service-section .service-box .imgBx,
+    .service-section .service-box:hover .imgBx
+    {
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    .service-section .service-box .imgBx img,
+    .service-section .service-box:hover .imgBx img
+    {
+        max-width: 100%;
+       
+    }
+
+    .service-section .service-box .content{
+        position: relative;
+        width: 100%;
+    }
+    .service-section .service-box .content p{
+    padding: 0 ;
+}
+    
+}
+
+    </style>
+</head>
+
+<body>
+    <section class="service-section">
+
+        <div class="service-box">
+            <div class="imgBx" data-text="Design">
+                <img src="https://zidio.in/assets/images/home-2/service-1.png" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h1>Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non autem assumenda voluptatibus in
+                        deserunt vel illum. Eum omnis dolorem fuga veritatis animi odio!</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="service-box">
+            <div class="imgBx" data-text="Design  01">
+                <img src="service-2.png" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h1>Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non autem assumenda voluptatibus in
+                        deserunt vel illum. Eum omnis dolorem fuga veritatis animi odio!</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="imgBx" data-text="Design">
+                <img src="https://zidio.in/assets/images/home-2/service-3.png" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h1>Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non autem assumenda voluptatibus in
+                        deserunt vel illum. Eum omnis dolorem fuga veritatis animi odio!</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="imgBx" data-text="Design">
+                <img src="https://zidio.in/assets/images/home-2/service-3.png" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h1>Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non autem assumenda voluptatibus in
+                        deserunt vel illum. Eum omnis dolorem fuga veritatis animi odio!</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

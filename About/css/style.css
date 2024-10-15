@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+
+main{
+    font-family: "Poppins", sans-serif;
+    
+}
+.about{
+    width: 85%;
+    margin: 50px auto;
+}
+.head-title{
+    color: #004cff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.title{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.para{
+font-size: 20px;
+color: rgba(78, 78, 78, 0.75);
+padding-bottom: 25px;
+text-align: center;
+}
+.quote{
+    display: block;
+    margin: 50px auto;
+    background: rgba(173, 216, 230, 0.32);
+    border-radius:30px;
+    width: 60%;
+    height: 100%;
+    padding: 35px 10px;
+}
+.quote p{
+    text-align: center;
+    padding: 15px ;
+    font-size: 24px;
+    font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+}
+.left-quote{
+    position: relative;
+    left: 5%;
+}
+.right-quote{
+    position: relative;
+    left: 93%;
+}
+
+@media (max-width: 900px){
+    .quote p{
+      font-size: 15px;
+    }
+}
+
+.feature{
+    /* min-height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 70px auto;
+}
+.feature .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+
+}
+.feature .card .image{
+    padding: 10px;
+    border-right: 2px solid  rgba(173, 216, 230);
+}
+.feature .card .text{
+    padding-left: 10px;
+    
+}
+.feature .card .text p{
+    padding-top: 10px;
+    color: rgba(78, 78, 78, 0.75);
+}
+
+
+
+
+
+
+.main-wrapper {
+    
+    max-width: 75%;
+    margin: 100px auto;
+    text-align: center;
+}
+.main-wrapper h1{
+    padding-bottom: 65px;
+}
+.main-wrapper span{
+    color: rgb(0, 55, 255);
+}
+.gallery-wrapper{
+    columns: 320px;
+}
+.gallery-card {
+    
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    margin: 10px 0;
+
+    transition: transform 0.3s;
+
+  
+
+}
+
+.gallery-image{
+    width: 100%;
+    
+}
+.gallery-card:hover {
+    transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 950px) {
+    
+
+.gallery-wrapper {
+    columns: auto;
+    display: flex;
+    overflow-x: auto;
+
+}
+.gallery-card{
+    margin: 10px;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+    width: 0;
+}
+.gallery-image {
+    width: auto;
+    height: 500px;
+}
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.team-area{
+    /* background: #d5d5d5; */
+    background: url("back-drop2.jpeg");
+    
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+    justify-content: space-evenly;
+}
+
+.colume {
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+.section-header h2{
+    font-family: "Baloo Paaji 2", sans-serif;
+    font-size: 50px;
+    /* margin-bottom: 50px; */
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.team-title{
+   
+    display: inline-block;
+    background-color: #0040ff;;
+    color: white;
+    padding: 15px 73px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 155px;
+    position: relative;
+    
+    margin: 40px 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 85% 100%, 0 100%);
+
+}
+
+.single-team{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background: #004cff;
+}
+
+.single-team:after,
+.single-team:before{
+    position: absolute;
+    content: '';
+}
+
+.single-team:before{
+    width: 90%;
+    height: 220%;
+    background: #004cffa2;
+    top: -68%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(21deg);
+    transform-origin: center top 0;
+    transition: all .5s ease 0s;
+}
+
+.single-team:hover:before{
+    left: 10%;
+}
+.single-team .team-text{
+    width: 65%;
+    padding: 0 12px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    transition: all 1.1s ease 0s;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.single-team:hover::after{
+    bottom: -70%;
+}
+.single-team img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.single-team .team-text{
+    top:-100%;
+}
+.single-team:hover .team-text{
+    top: 0;
+}
+
+.single-team h3{
+    font-size: 27px;
+    margin: 15px 0;
+    /* margin-top: 15px; */
+    /* margin-bottom: 8px; */
+    color: white;
+    line-height: 1em;
+    font-weight: bold;
+    font-family: "Baloo Paaji 2", sans-serif;
+    margin: 20px 0;
+
+
+}
+
+.single-team h4{
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    /* margin-top: 5px; */
+    margin-bottom: 8px;
+    /* margin: 10px 0; */
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.team-text i{
+    font-size: 20px;
+    margin: 0 5px;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .colume {
+        flex: 0 0 24%;
+        max-width: 25%;
+    }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .colume {
+        flex: 0 0 50%; /* 2 columns per row */
+        max-width: 40%;
+    }
+}
+
+/* For small screens (phones) */
+@media (max-width: 767px) {
+    .colume {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    .section-header h2 {
+        
+        font-size: 35px;
+        
+    }
+}
+/* ----------achivments----------- */
+.achiv-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    padding: 50px 0;
+    min-height: 100vh;
+    background: url("https://zidio.in/assets/images/home-2/counter-bg.jpg") center center / cover no-repeat;
+    
+}
+.achivements {
+    position: relative;
+    width: 1000px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fx)); */
+    display: flex;
+
+}
+
+.achivements .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    color: #0073ffd9;
+
+}
+
+.achivements .card:nth-child(even) {
+    flex-direction: column-reverse;
+
+}
+
+.achivements .card .imgBx {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #000;
+}
+
+.achivements .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.achivements .card .content {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+
+}
+
+.achivements .card .content div {
+    padding: 20px;
+    text-align: center;
+}
+.achivements .card .content div h1{
+    font-size: 55px;
+}
+.achivements .card .content div p{
+    font-size: 25px;
+}
+@media(max-width: 1000px) {
+    .achivements {
+
+        /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fx)); */
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .achivements .card {
+        flex-direction: row;
+        margin: 10px 0;
+    }
+
+    .achivements .card:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .achivements .card .imgBx,
+    .achivements .card .content {
+        width: 50%;
+
+    }
+}
+
+@media(max-width: 600px) {
+    .achivements .card {
+
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .achivements .card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .achivements .card .imgBx,
+    .achivements .card .content {
+        width: 100%;
+
+    }
+
+    .achivements .card .content {
+        height: 200px;
+    }
+}
+
+/* ----------testimonial---- */
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0;
+    background-color: #e3f2fdd0;
+    
+  }
+  .testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+  }
+  .feed-title{
+    margin-bottom: 90px;
+    padding:  0 20px;
+    text-align: center;
+  }
+  .feed-title h5{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #4070f4;
+  }
+  .feed-title h1{
+    font-size: 35px;
+  }
+  .testimonial .image {
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: drop-shadow(5px 2px 3px rgba(0, 0, 0, 0.576));
+  }
+  .testimonial .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    height: 100%;
+    width: 100%;
+  }
+  .slide p {
+    text-align: center;
+    padding: 0 90px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+  }
+  .slide .quote-icon {
+    font-size: 30px;
+    color: #4070f4;
+    
+  }
+  .para :first-child{
+    position: absolute;
+    left: 59px;
+    top: 201px;
+    bottom: 126px;
+  
+  }
+  .para :nth-child(2){
+    position: absolute;
+    right: 59px;
+    bottom: 0px;
+  }
+  .slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details .name {
+    font-size: 18px;
+    font-weight:bold;
+    color: #333;
+  }
+  .details .job {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+  }
+  /* swiper button css */
+  .nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+  .nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .nav-btn::after,
+  .nav-btn::before {
+    font-size: 20px;
+    color: #fff;
+  }
+  .swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* .swiper-pagination-bullet-active {
+    background-color: #4070f4;
+  } */
+  .slide ul{
+   display: flex;
+  }
+  
+  .slide ul li{
+    color: #ffc834;
+    font-size: 15px;
+    list-style: none;
+  }
+  @media screen and (max-width: 768px) {
+    .slide p {
+      padding: 0 20px;
+    }
+    .nav-btn {
+      display: none;
+    }
+    .quote-icon{
+      visibility: hidden;
+    }
+  }

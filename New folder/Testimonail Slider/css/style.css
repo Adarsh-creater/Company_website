@@ -1,0 +1,134 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #e3f2fd; */
+  background: url("https://cdn.shopify.com/s/files/1/0565/7431/2643/files/background.jpg?v=1641291483") center center / cover no-repeat;
+}
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.feed-title{
+  margin-bottom: 90px;
+  padding:  0 20px;
+}
+.feed-title h5{
+  font-size: 18px;
+}
+.feed-title h1{
+  font-size: 30px;
+}
+.testimonial .image {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: drop-shadow(5px 2px 3px rgba(0, 0, 0, 0.576));
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 0 90px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
+  /* color: #4070f4; */
+  
+}
+.para :first-child{
+  position: absolute;
+  left: 59px;
+  /* top: 201px; */
+  bottom: 126px;
+
+}
+.para :nth-child(2){
+  position: absolute;
+    right: 59px;
+    bottom: 29px;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 18px;
+  font-weight:bold;
+  color: #333;
+}
+.details .job {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* .swiper-pagination-bullet-active {
+  background-color: #4070f4;
+} */
+.slide ul{
+ display: flex;
+}
+
+.slide ul li{
+  /* color:#ffe234; */
+  font-size: 20px;
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .quote-icon{
+    visibility: hidden;
+  }
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      .container{
+        height: 500px;
+        width: 100%;
+        background-color: blue;
+        border: 2px solid wheat;
+        padding: 50px;
+      }
+      
+      .box{
+        
+        width: 10rem;
+        height: 4rem;
+        border: 2px solid white;
+        color: white;
+
+      }
+      .box-1{
+        position: relative;
+    padding: 11px 15px;
+    width: 8rem;
+    height: 2.5rem;
+    background-color: blue;
+    z-index: 5;
+    text-align: center;
+    font-size: 2.1rem;
+
+      }
+      .box-2{
+        position: relative;
+        top: -3.2rem;
+        left: 1rem;
+        z-index: 3;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+          <div class="box box-1">Contact</div>
+          <div class="box box-2"></div>
+       
+          <div class="txt">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum laudantium mollitia voluptatibus velit molestiae officiis consectetur qui molestias reiciendis nam dolorum repellendus commodi, quas, sint iusto similique. Molestiae cum assumenda obcaecati, numquam quis ipsum consequuntur provident laboriosam. Delectus, voluptates suscipit.
+          </div>
+    </div>
+</body>
+</html>

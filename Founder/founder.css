@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.team{
+    font-family: "Plus Jakarta Sans", sans-serif; 
+background: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?q=80&w=2602&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center center / cover no-repeat;
+}
+
+.team-title h3,.team-title h1{
+    margin: 20px 81px;
+}
+
+.team-title h1{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+.team-title h3{
+    
+    font-size: 25px;
+    margin-top: 0;
+    padding-top: 39px;
+    color: #0003a3;
+}
+.team-title h3,.founder-name{
+    font-family: "Nunito", sans-serif;
+}
+.founder{
+   
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    
+}
+
+.founder-image img{
+    width: 300px;
+    height: 300px;
+    
+}
+.founder-name{
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.founder-card{
+    background: #ffffff;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    padding: 16px;
+    margin: 15px;
+}
+
+.founder-info{
+    padding: 0 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+}
+.founder-link{
+    width: 132px;
+}
+.founder-link ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.founder-link li{
+    list-style: none;
+    font-size: 32px;
+    
+}
+.founder-link li a,.founder-name span{
+    color: #0003a3;
+
+    
+}
+
+
+
+.read-more-btn {
+    display: none;
+    background-color: #0003a3;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    font-size: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .read-more-btn:hover {
+    opacity: 0.8;
+  } 
+  .founder-description {
+    max-height: 100%;
+    margin: 10px 0;
+  }
+  @media (max-width: 1024px) {
+    .read-more-btn {
+        display: block;}
+    .founder-description {
+        
+        line-height: 1.2;
+        
+        overflow: hidden;
+        max-height: 1.6em; 
+        position: relative;
+        transition: max-height 0.3s ease;
+      }
+      
+      .founder-description.expanded {
+        max-height: none; /* When expanded, show full content */
+      }
+  }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* styles for tablets */
+    .founder{
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+    }
+    .founder-card{
+        width: 20%;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .founder-info{
+        height: auto;
+        align-items: center;
+    }
+    .founder-name{
+        font-size: 16px;
+    }
+    .founder-description{
+        margin: 10px 0;
+        text-align: left;
+    }
+    .founder-link ul {
+        
+        justify-content: space-around;
+        
+    }
+    .founder-link li {
+        
+        font-size: 20px;
+    }
+    .founder-description{
+        font-size: 12px;
+    }
+    .founder-link h3{
+        font-size: 15px;
+        text-align: center;
+    }
+    .founder-image img {
+        width: 145px;
+        height: 173px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    /* styles for phones */
+    .founder-card{
+        width: 70%;
+        flex-direction: column;
+        height: auto;
+    }
+    .founder-info{
+        height: auto;
+    }
+    .founder-description{
+        margin: 10px 0;
+        text-align: left;
+    }
+    .read-more-btn {
+        width: 30%;
+    }
+    .founder-image img {
+        width: 245px;
+        height: 250px;
+    }
+
+  }
