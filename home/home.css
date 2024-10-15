@@ -1,22 +1,168 @@
 
-/* main{
-    height: 100vh;
+
+main{
     width: 100%;
-} */
+    min-height: 100vh;
+  
+}
 .slide-container{
-    height: 600px;
-    width: 100%;
     position: relative;
+    width: 100%;
+    height: 650px;
+    
 }
 .slide-container .slides{
-    /* height: calc(100% - 40px); */
     width: 100%;
+    /* height: calc(100% - 40px); */
+    height: 100%;
     position: relative;
+    overflow: hidden;
 }
 .slide-container .slides img{
-    height: 100%;
     width: 100%;
+    height: 100%;
     position: absolute;
     object-fit: cover;
 }
+.slide-container .slides img:not(.active){
+    top: 0;
+    left: -100%;
+}
 
+
+
+@keyframes next1{
+    from{
+        left: 0%
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes next2{
+    from{
+        left: 100%
+    }
+    to{
+        left: 0%;
+    }
+}
+
+
+
+.expert-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #e5ecff;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    position: relative;
+    top: -99px;
+    width: 320px;
+    height: 240px;
+    transition: 0.3s ease;
+    background-color: #fff;
+    padding: 40px 15px;
+    margin: 28px;
+    overflow: hidden;
+    border-radius: 49%;
+    box-shadow: 5px 5px 10px #00000061;
+}
+
+.card .image {
+    padding: 10px;
+    border-radius: 35px;
+    background: #72727214;
+}
+
+
+
+.card h2 {
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+.card p {
+    text-align: center;
+    margin: 5px 0;
+    padding: 0px 25px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card a {
+    visibility: hidden;
+    text-decoration: none;
+    font-size: 18px;
+    /* font-weight: bold; */
+    color: #005eff;
+    padding: 8px 0;
+    
+
+}
+
+.card:hover h2 {
+    color: #fff;
+    z-index: 5;
+    /* backdrop-filter: blur(50px); */
+}
+
+.card:hover p {
+    color: #fff;
+    z-index: 5;
+    /* backdrop-filter: blur(50px); */
+}
+
+.card:hover .image {
+    background: #fff;
+    z-index: 5;
+    /* backdrop-filter: blur(50px); */
+}
+.card:hover a{
+    visibility: visible;
+    color: white;
+    z-index: 5;
+    /* backdrop-filter: blur(50px); */
+}
+
+.card::before,
+.card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg,
+            #005eff,
+            rgb(128, 0, 255));
+    transition: 0.5s ease;
+    z-index: 3;
+}
+
+.card::before {
+    clip-path: circle(30% at 0 0)
+}
+
+.card::after {
+    clip-path: circle(30% at 100% 100%)
+}
+
+.card:hover::before {
+    clip-path: circle(100% at 0 0);
+}
+
+.card:hover::after {
+    clip-path: circle(100% at 100% 100%);
+}
