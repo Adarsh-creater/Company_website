@@ -37,4 +37,20 @@ let slideImages = document.querySelectorAll('.slides img');
 	// Resume sliding when mouse is out
 	container.addEventListener('mouseout', autoSliding);
 
+
 	
+
+// ----------testimonal-------
+
+var btn = document.getElementsByClassName("btn");
+var slide = document.getElementById("slide");
+
+for (let i = 0; i < btn.length; i++) {
+  btn[i].onclick = function() {
+    slide.style.transform = `translateX(-${i * 800}px)`; 
+    for (let j = 0; j < btn.length; j++) {
+      btn[j].classList.remove("active-btn");
+    }
+    this.classList.add("active-btn");
+  }
+}
