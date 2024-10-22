@@ -253,11 +253,47 @@
   }
 }
 @media screen and (max-width: 768px) {
+        .card{
+            padding: 25px 33px;
+    margin: 20px 0;
+        }
+        .card-box{
+            justify-content: center;
+        }
+        .card h2{
+            font-size: 20px;
+        }
+
+        .card p {
+            padding: 0;
+        }
+        .card a{
+            font-size: 15px;
+        }
+    .intro-text h1{
+        text-align: center;
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+    .intro-text p {
+        
+        text-align: center;
+        max-width: 90%;
+    }
+    .job-role h1 {
+        font-size: 1.5em;
+        text-align: center;
+        
+    }
+
     .job-listing {
         flex-direction: column;
         align-items: flex-start;
     }
-
+    .job-role p{
+        margin: 20px 0;
+        text-align: center;
+    }
     .job-details {
      
         margin-bottom: 15px;
@@ -266,5 +302,14 @@
     .apply-btn {
         width: 100%;
         text-align: center;
+    }
+
+    .intro-text{
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .card .image img{
+        width: 35px;
     }
 }

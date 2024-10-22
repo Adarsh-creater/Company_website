@@ -188,11 +188,24 @@ background: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?q=
         text-align: left;
     }
     .read-more-btn {
-        width: 30%;
+        width: 46%;
     }
     .founder-image img {
         width: 245px;
         height: 250px;
     }
+    .team-title{
+        text-align: center;
+    }
 
+    .team-title h3,.team-title h1{
+        margin: 0;
+    }
+    .team-title h3{
+        font-size: 20px;
+    }
+    .team-title h1{
+        font-size: 25px;
+    }
+  
   }

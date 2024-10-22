@@ -249,6 +249,17 @@ main{
     clip-path: circle(100% at 100% 100%);
 }
 
+
+@media (max-width: 767px){
+  .card .image {
+    padding: 10px;
+  }
+
+  .card .image img{
+    width: 40px;
+  }
+}
+
 /* ----------about-section-------- */
 .experience-box {
   background-color: #0055ff;
@@ -516,7 +527,7 @@ main{
   }
 
   .award-card{
-    right: -24px;
+    right: -17px;
     bottom: 23px;
   }
 
@@ -879,7 +890,7 @@ padding: 50px 0;
   }
   .section-header h2 {
       
-      font-size: 35px;
+      font-size: 24px;
       
   }
 }
@@ -1117,7 +1128,7 @@ border: 2px solid #004cff;
   }
 
   .contact-item {
-    /* width: 100%;  */
+    width: 290px; 
     margin: 40px 0;
     /* justify-content: center; */
     justify-content: space-around;
